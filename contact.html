@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — CocoHarvest Exports</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-main navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand-custom" href="index.html">Coco<span>Harvest</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <div class="navbar-toggler-icon-custom"><span></span><span></span><span></span></div>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav gap-1 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link-custom" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link-custom active" href="contact.html">Contact</a></li>
+        <!-- <li class="nav-item ms-lg-2"><a class="btn-accent-custom" href="contact.html">Get a Quote</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container position-relative" style="z-index:1;">
+    <nav aria-label="breadcrumb" class="mb-3">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active">Contact</li>
+      </ol>
+    </nav>
+    <h1 class="page-hero-title">Get in Touch</h1>
+    <p style="color:rgba(255,255,255,.75);max-width:520px;margin-top:.8rem;">
+      We respond to all enquiries within 24 hours. Free samples available upon request.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section class="section-py">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- Contact Form -->
+      <div class="col-lg-7 reveal-left">
+        <span class="section-eyebrow">Send a Message</span>
+        <h2 class="section-title mt-2 mb-4">Request a Quote or Sample</h2>
+
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="firstName">First Name *</label>
+              <input type="text" class="form-control-custom" id="firstName" placeholder="John" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="lastName">Last Name *</label>
+              <input type="text" class="form-control-custom" id="lastName" placeholder="Smith" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="email">Email Address *</label>
+              <input type="email" class="form-control-custom" id="email" placeholder="john@company.com" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="phone">Phone / WhatsApp</label>
+              <input type="tel" class="form-control-custom" id="phone" placeholder="+1 234 567 8900">
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="country">Country *</label>
+              <select class="form-control-custom" id="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option>United States</option>
+                <option>United Kingdom</option>
+                <option>Netherlands</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Australia</option>
+                <option>Japan</option>
+                <option>South Korea</option>
+                <option>UAE</option>
+                <option>Saudi Arabia</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" for="product">Product Interest *</label>
+              <select class="form-control-custom" id="product" required>
+                <option value="" disabled selected>Select product</option>
+                <option>Cocopeat Compressed Blocks</option>
+                <option>Coco Husk Chips</option>
+                <option>Coco Grow Bags</option>
+                <option>Coco Coir Pith (Loose)</option>
+                <option>Cocopeat Mix 70/30</option>
+                <option>Custom / OEM</option>
+                <option>All Products</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom" for="quantity">Estimated Quantity</label>
+              <input type="text" class="form-control-custom" id="quantity" placeholder="e.g. 1 × 20FCL, 500 cartons, 5MT...">
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom" for="message">Message *</label>
+              <textarea class="form-control-custom" id="message" rows="5"
+                placeholder="Please describe your requirements, desired specs (EC, pH, moisture), packaging needs, destination port, and any other details..." required></textarea>
+            </div>
+            <!-- Sample Request Checkbox -->
+            <div class="col-12">
+              <label style="display:flex;align-items:center;gap:.8rem;cursor:pointer;">
+                <input type="checkbox" id="sampleReq" style="width:18px;height:18px;accent-color:var(--clr-primary);cursor:pointer;">
+                <span style="font-size:.9rem;color:var(--clr-text);">I would like to request a <strong>free product sample</strong></span>
+              </label>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-primary-custom" style="width:100%;justify-content:center;padding:1rem;">
+                <i class="fas fa-paper-plane"></i> Send Enquiry
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Success Message -->
+        <div id="formSuccess" style="display:none;background:rgba(74,124,89,.08);border:1.5px solid var(--clr-primary);border-radius:12px;padding:1.5rem;text-align:center;margin-top:1.5rem;">
+          <i class="fas fa-check-circle fa-2x mb-2" style="color:var(--clr-primary);"></i>
+          <h5 style="color:var(--clr-primary);">Message Sent Successfully!</h5>
+          <p style="color:var(--clr-muted);font-size:.9rem;margin:0;">Thank you for your enquiry. Our team will respond within 24 hours.</p>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-5 reveal-right">
+        <div class="contact-info-box">
+          <h4 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:white;margin-bottom:1.8rem;">Contact Information</h4>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-info-label">Office Address</div>
+              <div class="contact-info-value">Jl. Industri No. 45, Makassar<br>South Sulawesi 90245, Indonesia</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-info-label">Phone</div>
+              <div class="contact-info-value">+62 812-3456-7890</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-info-label">WhatsApp</div>
+              <div class="contact-info-value">
+                <a href="https://wa.me/6281234567890" target="_blank" style="color:white;text-decoration:underline;">+62 812-3456-7890</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-info-label">Email</div>
+              <div class="contact-info-value">export@cocoharvest.id<br>info@cocoharvest.id</div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <div class="contact-info-label">Business Hours (WITA / UTC+8)</div>
+              <div class="contact-info-value">Mon – Fri: 08:00 – 17:00<br>Sat: 08:00 – 13:00</div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.15);">
+            <div class="contact-info-label mb-3">Follow Us</div>
+            <div class="d-flex gap-2">
+              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="section-py-sm bg-cream">
+  <div class="container reveal">
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.3!2d119.4221!3d-5.1477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee1ef8a1b5e65%3A0xb6f91e8e41d29e26!2sMakassar%2C%20South%20Sulawesi!5e0!3m2!1sen!2sid!4v1700000000"
+        width="100%" height="420" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ SECTION -->
+<section class="section-py">
+  <div class="container">
+    <div class="text-center mb-5 reveal">
+      <span class="section-eyebrow">Have Questions?</span>
+      <h2 class="section-title mt-2">Frequently Asked Questions</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item reveal delay-1" style="border:1px solid var(--clr-sand);border-radius:12px !important;margin-bottom:.8rem;overflow:hidden;">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+                style="font-weight:600;font-size:.95rem;background:white;color:var(--clr-dark);">
+                What is the minimum order quantity (MOQ)?
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:var(--clr-muted);font-size:.9rem;">
+                Our standard MOQ is 1 × 20-foot container (approx. 22–24 MT depending on product). For samples, we can send 2–5 units at courier cost. We also accommodate LCL (Less than Container Load) shipments for initial orders.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal delay-2" style="border:1px solid var(--clr-sand);border-radius:12px !important;margin-bottom:.8rem;overflow:hidden;">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2"
+                style="font-weight:600;font-size:.95rem;background:white;color:var(--clr-dark);">
+                What documents do you provide for export?
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:var(--clr-muted);font-size:.9rem;">
+                We provide: Commercial Invoice, Packing List, Bill of Lading, Certificate of Origin (COO), Phytosanitary Certificate, MSDS, and Certificate of Analysis (COA). Additional documents such as FORM E (ASEAN) or fumigation certificates are available upon request.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal delay-3" style="border:1px solid var(--clr-sand);border-radius:12px !important;margin-bottom:.8rem;overflow:hidden;">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3"
+                style="font-weight:600;font-size:.95rem;background:white;color:var(--clr-dark);">
+                What are your payment terms?
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:var(--clr-muted);font-size:.9rem;">
+                We accept T/T (Bank Transfer) — 30% advance, 70% before shipment. Letter of Credit (L/C) at sight is also accepted for large orders. For long-term partners, credit terms can be discussed.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal delay-4" style="border:1px solid var(--clr-sand);border-radius:12px !important;margin-bottom:.8rem;overflow:hidden;">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4"
+                style="font-weight:600;font-size:.95rem;background:white;color:var(--clr-dark);">
+                Can you do private label / OEM packaging?
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:var(--clr-muted);font-size:.9rem;">
+                Yes! We offer full OEM and private label services. You can provide your own design, or our team can help design packaging. MOQ for OEM is 1 × 20-foot container. We support custom block weights, bag sizes, and multilingual labels.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item reveal delay-1" style="border:1px solid var(--clr-sand);border-radius:12px !important;overflow:hidden;">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5"
+                style="font-weight:600;font-size:.95rem;background:white;color:var(--clr-dark);">
+                How do I get a free sample?
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" style="color:var(--clr-muted);font-size:.9rem;">
+                Fill in the contact form above and check "I would like to request a free product sample." We will send 2–3 kg of your chosen product via DHL/FedEx. The sample is free; buyer covers courier cost. Most samples arrive within 5–7 business days.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-main pt-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand mb-3">Coco<span>Harvest</span></div>
+        <p style="font-size:.9rem;color:rgba(255,255,255,.6);max-width:300px;line-height:1.7;">Indonesia's premier cocopeat exporter delivering sustainable, premium growing media to the world since 2012.</p>
+        <div class="d-flex gap-2 mt-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-2">
+        <div class="footer-heading">Quick Links</div>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="about.html" class="footer-link">About Us</a>
+        <a href="products.html" class="footer-link">Products</a>
+        <a href="gallery.html" class="footer-link">Gallery</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <div class="footer-heading">Our Products</div>
+        <a href="products.html" class="footer-link">Cocopeat Blocks</a>
+        <a href="products.html" class="footer-link">Coco Husk Chips</a>
+        <a href="products.html" class="footer-link">Coco Coir Pith</a>
+        <a href="products.html" class="footer-link">Grow Bags</a>
+        <a href="products.html" class="footer-link">Bulk Cocopeat</a>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer-heading">Contact Us</div>
+        <div class="d-flex gap-2 align-items-start mb-2" style="font-size:.88rem;color:rgba(255,255,255,.6);"><i class="fas fa-map-marker-alt mt-1" style="color:var(--clr-accent-lt);"></i> Jl. Industri No. 45, Makassar, South Sulawesi 90245, Indonesia</div>
+        <div class="d-flex gap-2 align-items-center mb-2" style="font-size:.88rem;color:rgba(255,255,255,.6);"><i class="fas fa-phone" style="color:var(--clr-accent-lt);"></i> +62 812-3456-7890</div>
+        <div class="d-flex gap-2 align-items-center" style="font-size:.88rem;color:rgba(255,255,255,.6);"><i class="fas fa-envelope" style="color:var(--clr-accent-lt);"></i> export@cocoharvest.id</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mt-5">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <span>© 2024 CocoHarvest Exports. All rights reserved.</span>
+      <span>Made with <i class="fas fa-heart" style="color:var(--clr-accent-lt);"></i> in Indonesia</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/6281234567890" target="_blank" class="wa-float"><i class="fab fa-whatsapp"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+// Form submit
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  // Simple validation
+  const required = ['firstName','lastName','email','country','product','message'];
+  let valid = true;
+  required.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el.value.trim()) {
+      el.style.borderColor = '#e05c5c';
+      valid = false;
+    } else {
+      el.style.borderColor = '';
+    }
+  });
+  if (valid) {
+    this.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!--
+  ============================================================
+  NAVBAR COMPONENT — CocoHarvest Exports
+  Cara penggunaan: Copy seluruh kode di bawah ini ke halaman HTML Anda.
+  Ganti class "active" pada nav-link-custom sesuai halaman aktif.
+  ============================================================
+-->
+<nav class="navbar navbar-main navbar-expand-lg">
+  <div class="container">
+    <!-- Brand / Logo -->
+    <a class="navbar-brand-custom" href="index.html">
+      Coco<span>Harvest</span>
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler border-0" type="button"
+      data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-toggler-icon-custom">
+        <span></span><span></span><span></span>
+      </div>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav gap-1 align-items-lg-center">
+        <li class="nav-item">
+          <a class="nav-link-custom" href="index.html">
+            <i class="fas fa-home me-1 d-lg-none"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-custom" href="about.html">
+            <i class="fas fa-info-circle me-1 d-lg-none"></i>About
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link-custom dropdown-toggle" href="products.html"
+            id="productsDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-leaf me-1 d-lg-none"></i>Products
+          </a>
+          <ul class="dropdown-menu dropdown-menu-custom" aria-labelledby="productsDropdown">
+            <li>
+              <a class="dropdown-item-custom" href="products.html#cocopeat-block">
+                <i class="fas fa-cube"></i>
+                <div>
+                  <strong>Cocopeat Blocks</strong>
+                  <span>Compressed · Low EC · Triple Washed</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item-custom" href="products.html#coco-chips">
+                <i class="fas fa-puzzle-piece"></i>
+                <div>
+                  <strong>Coco Husk Chips</strong>
+                  <span>10–25mm · High Drainage</span>
+                </div>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider my-1"></li>
+            <li>
+              <a class="dropdown-item-custom" href="products.html">
+                <i class="fas fa-th-large"></i>
+                <div>
+                  <strong>View All Products</strong>
+                  <span>Full product catalogue</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-custom" href="gallery.html">
+            <i class="fas fa-images me-1 d-lg-none"></i>Gallery
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link-custom" href="contact.html">
+            <i class="fas fa-envelope me-1 d-lg-none"></i>Contact
+          </a>
+        </li>
+        <li class="nav-item ms-lg-2">
+          <a class="btn-accent-custom" href="request-sample.html">
+            <i class="fas fa-flask"></i> Free Sample
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--
+  ── Dropdown Custom Styles ──
+  Tambahkan di dalam <style> atau style.css Anda:
+-->
+<style>
+.dropdown-menu-custom {
+  background: rgba(26,42,30,.97);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 14px;
+  padding: .5rem;
+  min-width: 260px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.35);
+  margin-top: .5rem !important;
+}
+.dropdown-item-custom {
+  display: flex;
+  align-items: center;
+  gap: .9rem;
+  padding: .75rem 1rem;
+  border-radius: 8px;
+  color: rgba(255,255,255,.85);
+  transition: background .2s;
+  text-decoration: none;
+}
+.dropdown-item-custom:hover {
+  background: rgba(255,255,255,.08);
+  color: white;
+}
+.dropdown-item-custom i {
+  color: var(--clr-accent-lt);
+  font-size: 1rem;
+  width: 20px;
+  text-align: center;
+}
+.dropdown-item-custom div strong {
+  display: block;
+  font-size: .88rem;
+  font-weight: 600;
+}
+.dropdown-item-custom div span {
+  display: block;
+  font-size: .75rem;
+  color: rgba(255,255,255,.5);
+  margin-top: .1rem;
+}
+</style>
